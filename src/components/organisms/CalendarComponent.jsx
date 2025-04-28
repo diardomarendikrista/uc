@@ -16,7 +16,7 @@ import CustomToolbar from "components/molecules/CustomToolbar";
 const localizer = momentLocalizer(moment);
 
 export default function CalendarComponent() {
-  const [calendarWidth, setCalendarWidth] = useState(800);  // default width 800px
+  const [calendarWidth, setCalendarWidth] = useState(0); // default width 800px
 
   const [view, setView] = useAtom(calendarViewAtom);
   const [date, setDate] = useAtom(calendarDateAtom);
@@ -83,10 +83,12 @@ export default function CalendarComponent() {
   // Check window width and set calendar width accordingly
   useEffect(() => {
     const handleResize = () => {
-      setCalendarWidth(window.innerWidth <= 640 ? window.innerWidth : 800); // 640px is the breakpoint for mobile
+      setCalendarWidth(window.innerWidth <= 640 ? window.innerWidth - 20 : 800); // 640px is the breakpoint for mobile
     };
 
-    handleResize(); // Set the initial width
+    setTimeout(() => {
+      handleResize(); // Set the initial width
+    }, 100);
     window.addEventListener("resize", handleResize); // Listen to resize events
 
     return () => window.removeEventListener("resize", handleResize); // Cleanup on unmount
