@@ -58,7 +58,7 @@ export default function CustomToolbar({ date, view, onView, onNavigate }) {
   };
 
   return (
-    <div className="flex justify-between items-center p-2 mb-2 rounded">
+    <div className="flex justify-center sm:justify-between items-center p-2 mb-2 rounded flex-wrap gap-3 gap-y-2">
       <div className="flex space-x-2">
         <Tooltip text="To Today">
           <button
@@ -88,9 +88,9 @@ export default function CustomToolbar({ date, view, onView, onNavigate }) {
         </Tooltip>
       </div>
 
-      <div className="font-bold">{getFormattedDate()}</div>
+      <div className="font-bold flex text-lg">{getFormattedDate()}</div>
 
-      <div className="flex space-x-2">
+      <div className="flex space-x-2 items-end">
         <div className="flex">
           <button
             onClick={() => {

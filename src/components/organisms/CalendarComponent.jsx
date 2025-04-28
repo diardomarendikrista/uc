@@ -1,12 +1,13 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
-import { dayPropGetter, eventStyleGetter } from "lib/utils";
+import { cn, dayPropGetter, eventStyleGetter } from "lib/utils";
 import { dataLibur, dataMataKuliah } from "lib/dataEvents";
 import moment from "moment";
 import { useAtom } from "jotai";
 import {
   calendarDateAtom,
   calendarViewAtom,
+  dataLiburAtom,
   modalDetailDataAtom,
   showModalDetailAtom,
 } from "store";
@@ -15,8 +16,11 @@ import CustomToolbar from "components/molecules/CustomToolbar";
 const localizer = momentLocalizer(moment);
 
 export default function CalendarComponent() {
+  const [calendarWidth, setCalendarWidth] = useState(800);  // default width 800px
+
   const [view, setView] = useAtom(calendarViewAtom);
   const [date, setDate] = useAtom(calendarDateAtom);
+  const [libur] = useAtom(dataLiburAtom);
   const [, setShowModalDetail] = useAtom(showModalDetailAtom);
   const [, setModalDetailData] = useAtom(modalDetailDataAtom);
 
@@ -76,8 +80,25 @@ export default function CalendarComponent() {
     }
   }, [view, date, allEvents]);
 
+  // Check window width and set calendar width accordingly
+  useEffect(() => {
+    const handleResize = () => {
+      setCalendarWidth(window.innerWidth <= 640 ? window.innerWidth : 800); // 640px is the breakpoint for mobile
+    };
+
+    handleResize(); // Set the initial width
+    window.addEventListener("resize", handleResize); // Listen to resize events
+
+    return () => window.removeEventListener("resize", handleResize); // Cleanup on unmount
+  }, []);
+
   return (
-    <div ref={calendarRef}>
+    <div
+      ref={calendarRef}
+      className={cn("rounded-tl-2xl rounded-tr-2xl overflow-hidden", {
+        "rounded-bl-2xl rounded-br-2xl": libur?.length <= 0,
+      })}
+    >
       <Calendar
         localizer={localizer}
         events={allEvents}
@@ -95,7 +116,7 @@ export default function CalendarComponent() {
           setShowModalDetail(true);
           setModalDetailData(event);
         }}
-        style={{ height: 650, width: 800 }}
+        style={{ height: 650, width: calendarWidth }} // Dynamic width
       />
     </div>
   );
