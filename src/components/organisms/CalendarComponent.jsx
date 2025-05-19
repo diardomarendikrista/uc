@@ -118,7 +118,7 @@ export default function CalendarComponent() {
           setShowModalDetail(true);
           setModalDetailData(event);
         }}
-        style={{ height: 650, width: calendarWidth }} // Dynamic width
+        style={{ height: 710, width: calendarWidth }} // Dynamic width
       />
     </div>
   );
