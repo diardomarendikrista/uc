@@ -1,15 +1,13 @@
+import Layout from "layout/Layout";
+
 export default function KalendarAkademik() {
   const pdfUrl = "/assets/documents/kalendar-akademik-2024-2025.pdf";
 
   return (
-    <div className="w-full">
-      {/* Header */}
-      <div className="text-center mb-2">
-        <h1 className="text-2xl md:text-4xl font-bold">
-          Kalendar Akademik - IMT batch 6
-        </h1>
-      </div>
-
+    <Layout
+      title="Kalendar Akademik"
+      backTo="/"
+    >
       {/* PDF Viewer */}
       <div className="flex justify-center">
         <div className="w-full max-w-[95%] bg-gray-50 rounded-lg shadow-lg p-1 border border-gray-300">
@@ -53,6 +51,6 @@ export default function KalendarAkademik() {
       <div className="text-center text-gray-400 text-sm mt-6">
         <p>Updated: May 2025</p>
       </div>
-    </div>
+    </Layout>
   );
 }
