@@ -3,6 +3,7 @@ import Calendar from "pages/Calendar";
 import Home from "pages/Home";
 import MataKuliah from "pages/MataKuliah";
 import KalendarAkademik from "pages/KalendarAkademik";
+import CalendarConverter from "pages/CalendarConverter";
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
         <Route
           path="/calendar"
           element={<Calendar />}
+        />
+        <Route
+          path="/calendar/converter"
+          element={<CalendarConverter />}
         />
         <Route
           path="/mata-kuliah"

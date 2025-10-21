@@ -1,6 +1,6 @@
 import Navbar from "components/organisms/Navbar";
 
-export default function Layout({ backTo, title, children }) {
+export default function Layout({ backTo = "/", title = "UC app", children }) {
   return (
     <div className="w-full relative">
       <Navbar
