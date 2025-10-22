@@ -8,8 +8,20 @@ export const dataMataKuliah = [
     end: "2026-01-15T13:00:00.000Z",
   },
   {
+    title: "WP - 16 - Sync",
+    desc: "Web Programming - BA - Sync - Sesi 16",
+    start: "2026-01-14T10:00:00.000Z",
+    end: "2026-01-14T13:00:00.000Z",
+  },
+  {
     title: "CIV - 16 - Sync",
     desc: "Civics - BA - Sync - Sesi 16",
+    start: "2026-01-12T10:00:00.000Z",
+    end: "2026-01-12T13:00:00.000Z",
+  },
+  {
+    title: "WP - 15 - Async",
+    desc: "Web Programming - BA - Async - Sesi 15",
     start: "2026-01-12T10:00:00.000Z",
     end: "2026-01-12T13:00:00.000Z",
   },
@@ -26,10 +38,22 @@ export const dataMataKuliah = [
     end: "2026-01-08T13:00:00.000Z",
   },
   {
+    title: "WP - 14 - Sync",
+    desc: "Web Programming - BA - Sync - Sesi 14",
+    start: "2026-01-07T10:00:00.000Z",
+    end: "2026-01-07T13:00:00.000Z",
+  },
+  {
     title: "EIA - 14 - Async",
     desc: "Ethics for the Information Age - BA - Async - Sesi 14",
     start: "2026-01-06T10:00:00.000Z",
     end: "2026-01-06T13:00:00.000Z",
+  },
+  {
+    title: "WP - 13 - Async",
+    desc: "Web Programming - BA - Async - Sesi 13",
+    start: "2026-01-05T10:00:00.000Z",
+    end: "2026-01-05T13:00:00.000Z",
   },
   {
     title: "CIV - 14 - Async",
@@ -68,10 +92,22 @@ export const dataMataKuliah = [
     end: "2025-12-17T13:00:00.000Z",
   },
   {
+    title: "WP - 12 - Sync",
+    desc: "Web Programming - BA - Sync - Sesi 12",
+    start: "2025-12-17T10:00:00.000Z",
+    end: "2025-12-17T13:00:00.000Z",
+  },
+  {
     title: "EIA - 11 - Async",
     desc: "Ethics for the Information Age - BA - Async - Sesi 11",
     start: "2025-12-16T10:00:00.000Z",
     end: "2025-12-16T13:00:00.000Z",
+  },
+  {
+    title: "WP - 11 - Async",
+    desc: "Web Programming - BA - Async - Sesi 11",
+    start: "2025-12-15T10:00:00.000Z",
+    end: "2025-12-15T13:00:00.000Z",
   },
   {
     title: "CIV - 10 - Sync",
@@ -92,10 +128,22 @@ export const dataMataKuliah = [
     end: "2025-12-10T13:00:00.000Z",
   },
   {
+    title: "WP - 10 - Sync",
+    desc: "Web Programming - BA - Sync - Sesi 10",
+    start: "2025-12-10T10:00:00.000Z",
+    end: "2025-12-10T13:00:00.000Z",
+  },
+  {
     title: "EIA - 9 - Async",
     desc: "Ethics for the Information Age - BA - Async - Sesi 9",
     start: "2025-12-09T10:00:00.000Z",
     end: "2025-12-09T13:00:00.000Z",
+  },
+  {
+    title: "WP - 9 - Async",
+    desc: "Web Programming - BA - Async - Sesi 9",
+    start: "2025-12-08T10:00:00.000Z",
+    end: "2025-12-08T13:00:00.000Z",
   },
   {
     title: "CIV - 8 - Sync",
@@ -116,10 +164,22 @@ export const dataMataKuliah = [
     end: "2025-12-03T13:00:00.000Z",
   },
   {
+    title: "WP - 8 - Sync",
+    desc: "Web Programming - BA - Sync - Sesi 8",
+    start: "2025-12-03T10:00:00.000Z",
+    end: "2025-12-03T13:00:00.000Z",
+  },
+  {
     title: "EIA - 7 - Async",
     desc: "Ethics for the Information Age - BA - Async - Sesi 7",
     start: "2025-12-02T10:00:00.000Z",
     end: "2025-12-02T13:00:00.000Z",
+  },
+  {
+    title: "WP - 7 - Async",
+    desc: "Web Programming - BA - Async - Sesi 7",
+    start: "2025-12-01T10:00:00.000Z",
+    end: "2025-12-01T13:00:00.000Z",
   },
   {
     title: "CIV - 6 - Async",
@@ -140,10 +200,22 @@ export const dataMataKuliah = [
     end: "2025-11-26T13:00:00.000Z",
   },
   {
+    title: "WP - 6 - Async",
+    desc: "Web Programming - BA - Async - Sesi 6",
+    start: "2025-11-26T10:00:00.000Z",
+    end: "2025-11-26T13:00:00.000Z",
+  },
+  {
     title: "EIA - 5 - Async",
     desc: "Ethics for the Information Age - BA - Async - Sesi 5",
     start: "2025-11-25T10:00:00.000Z",
     end: "2025-11-25T13:00:00.000Z",
+  },
+  {
+    title: "WP - 5 - Async",
+    desc: "Web Programming - BA - Async - Sesi 5",
+    start: "2025-11-24T10:00:00.000Z",
+    end: "2025-11-24T13:00:00.000Z",
   },
   {
     title: "CIV - 4 - Sync",
@@ -158,10 +230,22 @@ export const dataMataKuliah = [
     end: "2025-11-20T13:00:00.000Z",
   },
   {
+    title: "WP - 4 - Sync",
+    desc: "Web Programming - BA - Sync - Sesi 4",
+    start: "2025-11-19T10:00:00.000Z",
+    end: "2025-11-19T13:00:00.000Z",
+  },
+  {
     title: "EIA - 3 - Async",
     desc: "Ethics for the Information Age - BA - Async - Sesi 3",
     start: "2025-11-18T10:00:00.000Z",
     end: "2025-11-18T13:00:00.000Z",
+  },
+  {
+    title: "WP - 3 - Async",
+    desc: "Web Programming - BA - Async - Sesi 3",
+    start: "2025-11-17T10:00:00.000Z",
+    end: "2025-11-17T13:00:00.000Z",
   },
   {
     title: "CIV - 3 - Async",
@@ -182,10 +266,22 @@ export const dataMataKuliah = [
     end: "2025-11-12T13:00:00.000Z",
   },
   {
+    title: "WP - 2 - Sync",
+    desc: "Web Programming - BA - Sync - Sesi 2",
+    start: "2025-11-12T10:00:00.000Z",
+    end: "2025-11-12T13:00:00.000Z",
+  },
+  {
     title: "CIV - 1 - Sync",
     desc: "Civics - BA - Sync - Sesi 1",
     start: "2025-11-07T10:00:00.000Z",
     end: "2025-11-07T13:00:00.000Z",
+  },
+  {
+    title: "WP - 1 - Sync",
+    desc: "Web Programming - BA - Sync - Sesi 1",
+    start: "2025-11-05T10:00:00.000Z",
+    end: "2025-11-05T13:00:00.000Z",
   },
   {
     title: "EIA - 1 - Sync",
