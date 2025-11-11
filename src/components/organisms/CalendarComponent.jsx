@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import { cn, dayPropGetter, eventStyleGetter } from "lib/utils";
-import { dataLibur, dataMataKuliah } from "lib/dataEvents";
+import { dataMataKuliah } from "lib/dataEvents";
+import { dataLibur } from "lib/dataHoliday";
 import moment from "moment";
 import { useAtom } from "jotai";
 import {
@@ -25,8 +26,8 @@ export default function CalendarComponent() {
   const [, setModalDetailData] = useAtom(modalDetailDataAtom);
 
   const calendarRef = useRef(null);
-  // Gabungkan dataMataKuliah dan dataLibur
   const allEvents = [...dataMataKuliah, ...dataLibur];
+  // Gabungkan dataMataKuliah dan dataLibur
 
   const handleNavigate = (newDate, viewAction) => {
     setDate(newDate);

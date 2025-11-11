@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { cn } from "lib/utils";
-import { dataLibur } from "lib/dataEvents";
 import { calendarDateAtom, dataLiburAtom } from "store";
 import { useAtom } from "jotai";
+import { dataLibur } from "lib/dataHoliday";
 
 export default function HolidayList() {
   const [date] = useAtom(calendarDateAtom);
