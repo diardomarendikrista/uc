@@ -16,8 +16,8 @@ export const dataMataKuliah = [
   {
     title: "CIV - 16 - Sync",
     desc: "Civics - BA - Sync - Sesi 16",
-    start: "2026-01-12T10:00:00.000Z",
-    end: "2026-01-12T13:00:00.000Z",
+    start: "2026-01-13T10:00:00.000Z",
+    end: "2026-01-13T13:00:00.000Z",
   },
   {
     title: "WP - 15 - Async",
@@ -38,8 +38,8 @@ export const dataMataKuliah = [
     end: "2026-01-08T13:00:00.000Z",
   },
   {
-    title: "WP - 14 - Sync",
-    desc: "Web Programming - BA - Sync - Sesi 14",
+    title: "WP - 14 - Async",
+    desc: "Web Programming - BA - Async - Sesi 14",
     start: "2026-01-07T10:00:00.000Z",
     end: "2026-01-07T13:00:00.000Z",
   },
@@ -200,8 +200,8 @@ export const dataMataKuliah = [
     end: "2025-11-26T13:00:00.000Z",
   },
   {
-    title: "WP - 6 - Async",
-    desc: "Web Programming - BA - Async - Sesi 6",
+    title: "WP - 6 - Sync",
+    desc: "Web Programming - BA - Sync - Sesi 6",
     start: "2025-11-26T10:00:00.000Z",
     end: "2025-11-26T13:00:00.000Z",
   },
@@ -266,8 +266,8 @@ export const dataMataKuliah = [
     end: "2025-11-12T13:00:00.000Z",
   },
   {
-    title: "WP - 2 - Sync",
-    desc: "Web Programming - BA - Sync - Sesi 2",
+    title: "WP - 2 - Async",
+    desc: "Web Programming - BA - Async - Sesi 2",
     start: "2025-11-12T10:00:00.000Z",
     end: "2025-11-12T13:00:00.000Z",
   },
@@ -278,16 +278,16 @@ export const dataMataKuliah = [
     end: "2025-11-07T13:00:00.000Z",
   },
   {
-    title: "WP - 1 - Sync",
-    desc: "Web Programming - BA - Sync - Sesi 1",
-    start: "2025-11-05T10:00:00.000Z",
-    end: "2025-11-05T13:00:00.000Z",
-  },
-  {
     title: "EIA - 1 - Sync",
     desc: "Ethics for the Information Age - BA - Sync - Sesi 1",
     start: "2025-11-06T10:00:00.000Z",
     end: "2025-11-06T13:00:00.000Z",
+  },
+  {
+    title: "WP - 1 - Sync",
+    desc: "Web Programming - BA - Sync - Sesi 1",
+    start: "2025-11-05T10:00:00.000Z",
+    end: "2025-11-05T13:00:00.000Z",
   },
   {
     title: "DB - 16 - Sync",
