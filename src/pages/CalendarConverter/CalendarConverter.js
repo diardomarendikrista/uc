@@ -1,16 +1,46 @@
 // --- made by gemini AI ---
 
 import moment from "moment";
-
 function getAbbreviation(subject) {
-  switch (subject.trim()) {
-    case "Ethics for the Information Age":
-      return "EIA";
-    case "Civics":
-      return "CIV";
-    default:
-      return "UNK";
+  const trimmedSubject = subject.trim();
+  const words = trimmedSubject.split(/\s+/); // Memecah berdasarkan spasi atau tab
+
+  // 1. Logika untuk satu kata (misal: "Civics" -> "CIV")
+  if (words.length === 1) {
+    const word = words[0];
+    // Ambil 3 huruf pertama, jadikan huruf besar.
+    // .substring(0, 3) aman meski katanya lebih pendek (misal "Go" -> "GO")
+    return word.substring(0, 3).toUpperCase();
   }
+
+  // 2. Logika untuk banyak kata (misal: "Web Programming" -> "WP")
+
+  // Filter hanya kata yang diawali huruf besar (A-Z)
+  // Ini akan mengambil "Ethics", "Information", "Age", tapi mengabaikan "for", "the"
+  const capitalWords = words.filter((word) => {
+    if (word.length === 0) return false;
+    const firstChar = word[0];
+    return firstChar >= "A" && firstChar <= "Z";
+  });
+
+  // Ambil huruf pertama dari setiap kata yang lolos filter
+  let abbreviation = capitalWords.map((word) => word[0]).join("");
+
+  // 3. Batasi maksimal 3 huruf (aturan "jika lebih, biarkan 3 pertama")
+  if (abbreviation.length > 3) {
+    abbreviation = abbreviation.substring(0, 3);
+  }
+
+  // 4. Fallback jika tidak ada hasil (misal jika inputnya "mata kuliah")
+  if (abbreviation.length === 0) {
+    if (words.length > 0) {
+      // Ambil 3 huruf pertama dari kata pertama saja
+      return words[0].substring(0, 3).toUpperCase();
+    }
+    return "UNK"; // Fallback terakhir
+  }
+
+  return abbreviation;
 }
 
 function getSyncType(typeChar) {
