@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import { cn, dayPropGetter, eventStyleGetter } from "lib/utils";
 import { dataMataKuliah } from "lib/dataEvents";
@@ -26,7 +26,13 @@ export default function CalendarComponent() {
   const [, setModalDetailData] = useAtom(modalDetailDataAtom);
 
   const calendarRef = useRef(null);
-  const allEvents = [...dataMataKuliah, ...dataLibur];
+  const allEvents = useMemo(() => {
+    return [...dataMataKuliah, ...dataLibur].map((evt) => ({
+      ...evt,
+      start: new Date(evt.start),
+      end: new Date(evt.end),
+    }));
+  }, [dataMataKuliah, dataLibur]);
   // Gabungkan dataMataKuliah dan dataLibur
 
   const handleNavigate = (newDate, viewAction) => {
