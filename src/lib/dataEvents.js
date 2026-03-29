@@ -92,8 +92,8 @@ export const dataMataKuliah = [
     end: "2026-04-07T13:00:00.000Z",
   },
   {
-    title: "OS - 12 - Sync",
-    desc: "Operating System - BA - Sync - Sesi 12",
+    title: "OS - 12 - Async",
+    desc: "Operating System - BA - Async - Sesi 12",
     start: "2026-04-06T10:00:00.000Z",
     end: "2026-04-06T13:00:00.000Z",
   },
@@ -110,8 +110,8 @@ export const dataMataKuliah = [
     end: "2026-04-02T13:00:00.000Z",
   },
   {
-    title: "OS - 11 - Async",
-    desc: "Operating System - BA - Async - Sesi 11",
+    title: "OS - 11 - Sync",
+    desc: "Operating System - BA - Sync - Sesi 11",
     start: "2026-04-01T10:00:00.000Z",
     end: "2026-04-01T13:00:00.000Z",
   },
@@ -176,14 +176,14 @@ export const dataMataKuliah = [
     end: "2026-03-09T13:00:00.000Z",
   },
   {
-    title: "VP - 7 - Sync",
-    desc: "Visual Programming - BA - Sync - Sesi 7",
-    start: "2026-03-06T10:00:00.000Z",
-    end: "2026-03-06T13:00:00.000Z",
-  },
-  {
     title: "DM - 6 - Async",
     desc: "Discrete Mathematics - BA - Async - Sesi 6",
+    start: "2026-03-05T10:00:00.000Z",
+    end: "2026-03-05T13:00:00.000Z",
+  },
+  {
+    title: "VP - 7 - Sync",
+    desc: "Visual Programming - BA - Sync - Sesi 7",
     start: "2026-03-05T10:00:00.000Z",
     end: "2026-03-05T13:00:00.000Z",
   },
@@ -242,14 +242,14 @@ export const dataMataKuliah = [
     end: "2026-02-24T13:00:00.000Z",
   },
   {
-    title: "VP - 3 - Sync",
-    desc: "Visual Programming - BA - Sync - Sesi 3",
-    start: "2026-02-20T10:00:00.000Z",
-    end: "2026-02-20T13:00:00.000Z",
-  },
-  {
     title: "DM - 2 - Async",
     desc: "Discrete Mathematics - BA - Async - Sesi 2",
+    start: "2026-02-19T10:00:00.000Z",
+    end: "2026-02-19T13:00:00.000Z",
+  },
+  {
+    title: "VP - 3 - Sync",
+    desc: "Visual Programming - BA - Sync - Sesi 3",
     start: "2026-02-19T10:00:00.000Z",
     end: "2026-02-19T13:00:00.000Z",
   },
