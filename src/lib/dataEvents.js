@@ -260,8 +260,8 @@ export const dataMataKuliah = [
     end: "2026-05-11T13:00:00.000Z",
   },
   {
-    title: "WD - 3 - Sync",
-    desc: "Web Development - BA - Sync - Sesi 3",
+    title: "WD - 3 - Async",
+    desc: "Web Development - BA - Async - Sesi 3",
     start: "2026-05-11T10:00:00.000Z",
     end: "2026-05-11T13:00:00.000Z",
   },
