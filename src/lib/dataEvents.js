@@ -26,8 +26,8 @@ export const dataMataKuliah = [
     end: "2026-07-06T13:00:00.000Z",
   },
   {
-    title: "WD - 16 - Sync",
-    desc: "Web Development - BA - Sync - Sesi 16",
+    title: "WD - 16 - Async",
+    desc: "Web Development - BA - Async - Sesi 16",
     start: "2026-07-06T10:00:00.000Z",
     end: "2026-07-06T13:00:00.000Z",
   },
@@ -98,12 +98,6 @@ export const dataMataKuliah = [
     end: "2026-06-22T13:00:00.000Z",
   },
   {
-    title: "MI - 11 - Async",
-    desc: "Menjadi Indonesia - BA - Async - Sesi 11",
-    start: "2026-06-18T10:00:00.000Z",
-    end: "2026-06-18T13:00:00.000Z",
-  },
-  {
     title: "BI - 10 - Sync",
     desc: "Bahasa Indonesia - BA - Sync - Sesi 10",
     start: "2026-06-18T10:00:00.000Z",
@@ -116,10 +110,10 @@ export const dataMataKuliah = [
     end: "2026-06-18T13:00:00.000Z",
   },
   {
-    title: "BI - 9 - Async",
-    desc: "Bahasa Indonesia - BA - Async - Sesi 9",
-    start: "2026-06-16T10:00:00.000Z",
-    end: "2026-06-16T13:00:00.000Z",
+    title: "MI - 11 - Async",
+    desc: "Menjadi Indonesia - BA - Async - Sesi 11",
+    start: "2026-06-17T10:00:00.000Z",
+    end: "2026-06-17T13:00:00.000Z",
   },
   {
     title: "MI - 10 - Async",
@@ -128,8 +122,14 @@ export const dataMataKuliah = [
     end: "2026-06-15T13:00:00.000Z",
   },
   {
-    title: "WD - 10 - Async",
-    desc: "Web Development - BA - Async - Sesi 10",
+    title: "BI - 9 - Async",
+    desc: "Bahasa Indonesia - BA - Async - Sesi 9",
+    start: "2026-06-15T10:00:00.000Z",
+    end: "2026-06-15T13:00:00.000Z",
+  },
+  {
+    title: "WD - 10 - Sync",
+    desc: "Web Development - BA - Sync - Sesi 10",
     start: "2026-06-15T10:00:00.000Z",
     end: "2026-06-15T13:00:00.000Z",
   },
