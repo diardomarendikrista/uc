@@ -101,11 +101,26 @@ export function parseSchedule(textData) {
 
         const isoDate = moment(dateString, "DD MMMM YYYY").format("YYYY-MM-DD");
 
+        let eventType = "Regular";
+        // Scan ahead up to 10 lines to detect AFL or ALP
+        for (let j = i; j < i + 10 && j < lines.length; j++) {
+          if (j !== i && lines[j].match(dateLinePattern)) {
+            break;
+          }
+          // Gunakan regex yang lebih ketat agar tidak mendeteksi teks "[BOBOT SKOR: ... DARI TOTAL SKOR ALP]"
+          if (lines[j].match(/Sesi\s+\d+:\s*ALP/i)) {
+            eventType = "ALP";
+          } else if (lines[j].match(/Sesi\s+\d+:\s*AFL/i)) {
+            eventType = "AFL";
+          }
+        }
+
         const newEntry = {
           title: `${abbreviation} - ${sessionNum} - ${syncType}`,
           desc: `${subject} - BA - ${syncType} - Sesi ${sessionNum}`,
           start: moment(`${isoDate}T17:00:00`).toDate(),
           end: moment(`${isoDate}T20:00:00`).toDate(),
+          eventType: eventType,
         };
 
         results.push(newEntry);

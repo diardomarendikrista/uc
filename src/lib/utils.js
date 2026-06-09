@@ -24,9 +24,9 @@ export const eventStyleGetter = (event) => {
   let backgroundColor = "";
   if (event.type === "holiday") {
     backgroundColor = "red"; // Libur menggunakan warna merah
-  } else if (event.desc && event.desc.match(/sesi (4|8|12|16)/i)) {
-    backgroundColor = "orange"; // Sesi ALP
-  } else if (event.title.includes("Async")) {
+  } else if (event.eventType === "ALP" || event.eventType === "AFL") {
+    backgroundColor = "orange"; // Sesi ALP / AFL berdasarkan data converter
+  } else if (event.title && event.title.includes("Async")) {
     backgroundColor = "green";
   }
 
