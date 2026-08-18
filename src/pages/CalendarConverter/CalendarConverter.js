@@ -63,7 +63,7 @@ export function parseSchedule(textData) {
 
   // Pola 2: Mencari baris mata kuliah
   // Menambahkan \s+ untuk menangani tab setelah kurung (misal: "(Thursday)<tab>Ethics...")
-  const subjectLinePattern = /^\(.*\)\s+(.*)\s* - BA/;
+  const subjectLinePattern = /^\(.*\)\s+(.*?)\s*-\s*([a-zA-Z0-9]+)/;
 
   // Pola 3: Mencari baris sesi (Ini masalah utamanya)
   // Menggunakan \s+ untuk menangani tab di sekitar nomor sesi (misal: "...Sesi<tab>16<tab>A...")
@@ -85,6 +85,7 @@ export function parseSchedule(textData) {
         const subjectMatch = subjectLine.match(subjectLinePattern);
         if (!subjectMatch) continue;
         const subject = subjectMatch[1].trim();
+        const className = subjectMatch[2] ? subjectMatch[2].trim().toUpperCase() : "BA";
 
         const sessionMatch = sessionLine.match(sessionLinePattern);
         if (!sessionMatch) {
@@ -117,7 +118,7 @@ export function parseSchedule(textData) {
 
         const newEntry = {
           title: `${abbreviation} - ${sessionNum} - ${syncType}`,
-          desc: `${subject} - BA - ${syncType} - Sesi ${sessionNum}`,
+          desc: `${subject} - ${className} - ${syncType} - Sesi ${sessionNum}`,
           start: moment(`${isoDate}T17:00:00`).toDate(),
           end: moment(`${isoDate}T20:00:00`).toDate(),
           eventType: eventType,

@@ -104,7 +104,7 @@ export default function CalendarComponent() {
   return (
     <div
       ref={calendarRef}
-      className={cn("rounded-tl-2xl rounded-tr-2xl overflow-hidden", {
+      className={cn("rounded-tl-xl rounded-tr-xl overflow-hidden", {
         "rounded-bl-2xl rounded-br-2xl": libur?.length <= 0,
       })}
     >
