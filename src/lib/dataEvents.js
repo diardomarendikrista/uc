@@ -2,6 +2,13 @@ import moment from "moment";
 
 export const dataMataKuliah = [
   {
+    title: "CN - 16 - Async",
+    desc: "Computer Networks - BA - Async - Sesi 16",
+    start: "2026-10-24T10:00:00.000Z",
+    end: "2026-10-24T13:00:00.000Z",
+    eventType: "ALP",
+  },
+  {
     title: "LW - 16 - Sync",
     desc: "Leisure Wellbeing - BB - Sync - Sesi 16",
     start: "2026-10-22T10:00:00.000Z",
@@ -9,11 +16,11 @@ export const dataMataKuliah = [
     eventType: "ALP",
   },
   {
-    title: "CN - 16 - Sync",
-    desc: "Computer Networks - BA - Sync - Sesi 16",
+    title: "CN - 15 - Sync",
+    desc: "Computer Networks - BA - Sync - Sesi 15",
     start: "2026-10-21T10:00:00.000Z",
     end: "2026-10-21T13:00:00.000Z",
-    eventType: "ALP",
+    eventType: "Regular",
   },
   {
     title: "LW - 15 - Async",
@@ -30,8 +37,8 @@ export const dataMataKuliah = [
     eventType: "ALP",
   },
   {
-    title: "CN - 15 - Async",
-    desc: "Computer Networks - BA - Async - Sesi 15",
+    title: "CN - 14 - Async",
+    desc: "Computer Networks - BA - Async - Sesi 14",
     start: "2026-10-19T10:00:00.000Z",
     end: "2026-10-19T13:00:00.000Z",
     eventType: "Regular",
@@ -51,8 +58,8 @@ export const dataMataKuliah = [
     eventType: "Regular",
   },
   {
-    title: "CN - 14 - Async",
-    desc: "Computer Networks - BA - Async - Sesi 14",
+    title: "CN - 13 - Sync",
+    desc: "Computer Networks - BA - Sync - Sesi 13",
     start: "2026-10-14T10:00:00.000Z",
     end: "2026-10-14T13:00:00.000Z",
     eventType: "Regular",
@@ -69,13 +76,6 @@ export const dataMataKuliah = [
     desc: "Software Engineering - BA - Sync - Sesi 14",
     start: "2026-10-13T10:00:00.000Z",
     end: "2026-10-13T13:00:00.000Z",
-    eventType: "Regular",
-  },
-  {
-    title: "CN - 13 - Async",
-    desc: "Computer Networks - BA - Async - Sesi 13",
-    start: "2026-10-12T10:00:00.000Z",
-    end: "2026-10-12T13:00:00.000Z",
     eventType: "Regular",
   },
   {
@@ -191,8 +191,8 @@ export const dataMataKuliah = [
     eventType: "AFL",
   },
   {
-    title: "CN - 6 - Sync",
-    desc: "Computer Networks - BA - Sync - Sesi 6",
+    title: "CN - 6 - Async",
+    desc: "Computer Networks - BA - Async - Sesi 6",
     start: "2026-09-16T10:00:00.000Z",
     end: "2026-09-16T13:00:00.000Z",
     eventType: "Regular",
